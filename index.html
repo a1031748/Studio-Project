@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./SCSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.6/axios.min.js"
+        integrity="sha512-CmAbe9oceGW5QqQ3m4+xHwUEILjqe3qxPkgdAsGL6mTDSqNcnoHDDdl+rZTwibMlnw0Sqf3IRvfsKNfIKqX/8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg_color">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Yellow Studio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ms-auto me-3">
+                    <li class="nav-item me-3"><a class="nav_link" href="#section_about" style="text-decoration: none;">About</a></li>
+                    <li class="nav-item me-3"><a class="nav_link"  href="#section_works" style="text-decoration: none;">Works</a></li>
+                    <li class="nav-item me-3"><a class="nav_link"  href="#section_Contact" style="text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header" id="header_index">
+        <div class="container">
+            <img src="https://awiclass.monoame.com/img/webpic/w_icon.svg" alt="" class="icon">
+            <img src="https://awiclass.monoame.com/img/margin/m_index.svg" alt="" class="marginbottom mountain">
+            <div class="explore at_top">EXPLORE</div>
+        </div>
+    </div>
+
+    <section id="section_about">
+
+        <img src="https://awiclass.monoame.com/img/margin/m_about.svg" alt="" class="marginbottom mountain">
+        <img src="https://awiclass.monoame.com/catpic/cat_lefttop.png" alt="" id="cat">
+        <div id="cross"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 offset-sm-4">
+                    <img src="https://awiclass.monoame.com/img/webpic/w_tri1.svg" alt="" class="tri1 tri">
+                    <h2 class="r1text">WORKS IN YELLOW</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="https://awiclass.monoame.com/img/webpic/w_tri2.svg" alt="" class="tri2 tri">
+                </div>
+                <div class="col-sm-8">
+                    <img src="https://awiclass.monoame.com/img/webpic/w_tri3.svg" alt="" class="tri3 tri">
+                    <h3 class="r2text">YELLOW STUDIO-Website Design / Development</h3>
+                    <!-- <h3 class="r2text">Interactive Art Design</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2 class="r3text">
+                        430 MORE SUCCESS CASES
+                    </h2>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+
+                <div class="col-sm-4 btn-area">
+                    <a href="#section_works" class="btn bg-light">MORE STORY</a>
+                    <img src="https://awiclass.monoame.com/img/webpic/w_tri4.svg" alt="" class="tri4 tri">
+                </div>
+                <div class="col-sm-4">
+                    <img src="https://awiclass.monoame.com/img/webpic/w_tri5.svg" alt="" class="tri5 tri">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_service">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Service</h1>
+                </div>
+                <div class="col-sm-4">
+                    <img src="https://awiclass.monoame.com/img/webpic/w_service_icon1.svg" alt="" class="icon_service">
+                    <h3>CI/VI Design</h3>
+                </div>
+                <div class="col-sm-4">
+                    <img src="https://awiclass.monoame.com/img/webpic/w_service_icon2.svg" alt="" class="icon_service">
+                    <h3>MotionGraphic</h3>
+                </div>
+                <div class="col-sm-4">
+                    <img src="https://awiclass.monoame.com/img/webpic/w_service_icon3.svg" alt="" class="icon_service">
+                    <h3>Web Development</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="section_works">
+        <img src="https://awiclass.monoame.com/img/margin/m_works.svg" alt="" class="marginbottom mountain">
+        <div class="container" id="app">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Works</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 work big">
+                    <img :src="works[0].img" alt="">
+                    <a :href="works[0].website">
+                        <div class="texts">
+                            <h4 class="title">{{works[0].name}}</h4>
+                            <p class="content">{{works[0].description}}</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-6 work">
+                            <a :href="works[1].website">
+                                <img :src="works[1].img" alt="">
+                                <div class="texts">
+                                    <h4 class="title">{{works[1].name}}</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 work">
+                            <a :href="works[2].website">
+                                <img :src="works[2].img" alt="">
+                                <div class="texts">
+                                    <h4 class="title">{{works[2].name}}</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 work">
+                            <a :href="works[3].website">
+                                <img :src="works[3].img" alt="">
+                                <div class="texts">
+                                    <h4 class="title">{{works[3].name}}</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 work">
+                            <a :href="works[4].website">
+                                <img :src="works[4].img" alt="">
+                                <div class="texts">
+                                    <h4 class="title">{{works[4].name}}</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_contact">
+        <!-- 三隻貓 -->
+        <img src="http://awiclass.monoame.com/catpic/cat_blue_cat.png" alt="" class="cat" id="cat_blue">
+        <img src="http://awiclass.monoame.com/catpic/cat_yellow_cat.png" alt="" class="cat" id="cat_yellow">
+        <img src="http://awiclass.monoame.com/catpic/cat_grey_cat.png" alt="" class="cat" id="cat_grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="mails">
+                        <div class="mailcover">
+                            <img src="https://awiclass.monoame.com/img/webpic/w_mail_cover.svg" alt="">
+                        </div>
+                        <div class="mailbody">
+                            <h5>Dear Yellow Studio</h5>
+                            <label for="">Name</label>
+                            <input type="text">
+                            <label for="">Email</label>
+                            <input type="text">
+                            <label for="">Content</label>
+                            <textarea name="" id="" cols="30" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-sm-6 contact_text">
+                    <h2>CONTACT</h2>
+                    <br>
+                    <p>If you have any question about us,<br>Don't hesitate to contact us</p>
+                    <p>YELLOWSTUDIO@gmail.com <br>
+                        ADDRESS: TAIWAN, TAIPEI , XORO Road
+                        Phone: 02-12345678</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <img src="https://awiclass.monoame.com/img/webpic/w_icon_black.svg" alt="" class="icon">
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="./SCSS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
